@@ -2,7 +2,6 @@ import { SEODATA } from "@constants/seoContants";
 import AppLayout from "@src/components/AppLayout";
 import ForgotPasswordForm from "@src/components/Form/ForgotPasswordForm";
 import LoginForm from "@src/components/Form/LoginForm";
-import AppMenu from "@src/components/Navbars/AppMenu";
 import { Metadata } from "next";
 import React from "react";
 
@@ -22,14 +21,13 @@ import React from "react";
 // };
 
 const page = () => {
-	return (
-		<AppLayout>
-			<main className='grid place-items-center h-screen px-3 md:px-0 lg:mt-10'>
-				<ForgotPasswordForm />
-			</main>
-			<AppMenu />
-		</AppLayout>
-	);
+  return (
+    <AppLayout>
+      <main className="grid place-items-center h-screen px-3 md:px-0">
+        <ForgotPasswordForm />
+      </main>
+    </AppLayout>
+  );
 };
 
 export default page;

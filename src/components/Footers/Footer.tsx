@@ -100,7 +100,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-[#1C1C1E]">
       {/* ─── Main Footer Content ─── */}
-      <div className="max-w-[1256px] mx-auto px-6 sm:px-8 pt-10 pb-8">
+      <div className="max-w-[1256px] mx-auto px-6 sm:px-8 pt-10 pb-24 sm:pb-8">
         {/* Logo */}
         <Link
           href="/"

@@ -249,37 +249,47 @@ const Header = () => {
         <div className="hidden slg:block h-[2px] bg-gradient-to-r from-[#7C3AED]/40 via-[#7C3AED] to-[#7C3AED]/40" />
 
         {/* Mobile Header (Hidden on Laptop) */}
-        <div className="slg:hidden flex flex-col w-full p-4 gap-3 bg-black">
+        <div className="slg:hidden flex flex-col w-full px-5 py-4 gap-4 bg-[#0D0D1A] border-b border-gray-800/50">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <FiMenu
-                className="text-2xl text-white"
+            <div className="flex items-center gap-5">
+              <button
                 onClick={() => setDrawerVisible(true)}
-              />
-              <LogoImage className="!w-[30px] brightness-200" />
+                className="p-1 -ml-1 text-white hover:text-[#7C3AED] transition-colors">
+                <FiMenu className="text-2xl" />
+              </button>
+              <Link
+                href="/"
+                className="text-lg font-bold tracking-[0.12em] text-[#7C3AED] uppercase">
+                LOGO
+              </Link>
             </div>
-            <div onClick={onOpenCart} className="relative">
-              <FiShoppingBag className="text-2xl text-white" />
+
+            <button
+              onClick={onOpenCart}
+              className="relative p-1 text-white hover:text-[#7C3AED] transition-colors">
+              <FiShoppingBag className="text-2xl" />
               {totalItems > 0 && (
-                <span className="absolute -top-2 -right-2 size-4 bg-blue-600 rounded-full text-[9px] flex items-center justify-center text-white">
+                <span className="absolute -top-1 -right-1 size-4.5 bg-[#7C3AED] rounded-full text-[10px] font-bold flex items-center justify-center text-white border-2 border-[#0D0D1A]">
                   {totalItems}
                 </span>
               )}
-            </div>
+            </button>
           </div>
-          <div className="relative h-10">
+
+          <div className="relative group">
             <input
               type="text"
-              placeholder="Search items..."
-              className="w-full h-full text-sm bg-gray-100 rounded-lg px-4 border-none outline-none focus:ring-2 focus:ring-primary-100"
+              placeholder="Search products..."
+              className="w-full h-11 text-sm bg-gray-900/50 text-white rounded-xl px-4 pl-10 border border-gray-700 outline-none focus:border-[#7C3AED] focus:ring-1 focus:ring-[#7C3AED]/30 transition-all placeholder:text-gray-500"
               value={searchValue}
               onChange={(e) => setSearchValue(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && handleSearch()}
             />
-            {isPending ?
-              <ImSpinner2 className="absolute right-3 top-1/3 text-primary-100 animate-spin" />
-            : <FiSearch className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" />
-            }
+            <div className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#7C3AED] transition-colors">
+              {isPending ?
+                <ImSpinner2 className="size-4 animate-spin text-[#7C3AED]" />
+              : <FiSearch className="size-4" />}
+            </div>
           </div>
         </div>
 
