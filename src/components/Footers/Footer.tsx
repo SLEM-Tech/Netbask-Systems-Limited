@@ -100,7 +100,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-[#1C1C1E]">
       {/* ─── Main Footer Content ─── */}
-      <div className="max-w-[1256px] mx-auto px-6 sm:px-8 pt-10 pb-24 sm:pb-8">
+      <div className="max-w-[1256px] mx-auto px-4 sm:px-8 pt-8 sm:pt-10 pb-20 sm:pb-8">
         {/* Logo */}
         <Link
           href="/"
@@ -109,7 +109,7 @@ const Footer = () => {
         </Link>
 
         {/* Columns */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-12">
           {/* About Column */}
           <div className="sm:col-span-1 lg:col-span-1">
             <h3 className="text-lg sm:text-xl font-bold text-white mb-4">
@@ -186,7 +186,7 @@ const Footer = () => {
 
       {/* ─── Bottom Bar ─── */}
       <div className="border-t border-gray-700/50">
-        <div className="max-w-[1256px] mx-auto px-6 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="max-w-[1256px] mx-auto px-4 sm:px-8 py-4 sm:py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-gray-500">
             Copyright - {currentYear}- All rights reserved
           </p>

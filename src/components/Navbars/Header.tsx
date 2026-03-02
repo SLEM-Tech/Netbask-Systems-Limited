@@ -249,17 +249,17 @@ const Header = () => {
         <div className="hidden slg:block h-[2px] bg-gradient-to-r from-[#7C3AED]/40 via-[#7C3AED] to-[#7C3AED]/40" />
 
         {/* Mobile Header (Hidden on Laptop) */}
-        <div className="slg:hidden flex flex-col w-full px-5 py-4 gap-4 bg-[#0D0D1A] border-b border-gray-800/50">
+        <div className="slg:hidden flex flex-col w-full px-3 sm:px-5 py-3 gap-3 bg-[#0D0D1A] border-b border-gray-800/50">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-3">
               <button
                 onClick={() => setDrawerVisible(true)}
                 className="p-1 -ml-1 text-white hover:text-[#7C3AED] transition-colors">
-                <FiMenu className="text-2xl" />
+                <FiMenu className="text-xl sm:text-2xl" />
               </button>
               <Link
                 href="/"
-                className="text-lg font-bold tracking-[0.12em] text-[#7C3AED] uppercase">
+                className="text-base sm:text-lg font-bold tracking-[0.12em] text-[#7C3AED] uppercase">
                 LOGO
               </Link>
             </div>
@@ -267,9 +267,9 @@ const Header = () => {
             <button
               onClick={onOpenCart}
               className="relative p-1 text-white hover:text-[#7C3AED] transition-colors">
-              <FiShoppingBag className="text-2xl" />
+              <FiShoppingBag className="text-xl sm:text-2xl" />
               {totalItems > 0 && (
-                <span className="absolute -top-1 -right-1 size-4.5 bg-[#7C3AED] rounded-full text-[10px] font-bold flex items-center justify-center text-white border-2 border-[#0D0D1A]">
+                <span className="absolute -top-1 -right-1 size-4 sm:size-4.5 bg-[#7C3AED] rounded-full text-[9px] sm:text-[10px] font-bold flex items-center justify-center text-white border-2 border-[#0D0D1A]">
                   {totalItems}
                 </span>
               )}
@@ -280,7 +280,7 @@ const Header = () => {
             <input
               type="text"
               placeholder="Search products..."
-              className="w-full h-11 text-sm bg-gray-900/50 text-white rounded-xl px-4 pl-10 border border-gray-700 outline-none focus:border-[#7C3AED] focus:ring-1 focus:ring-[#7C3AED]/30 transition-all placeholder:text-gray-500"
+              className="w-full h-10 sm:h-11 text-sm bg-gray-900/50 text-white rounded-xl px-4 pl-10 border border-gray-700 outline-none focus:border-[#7C3AED] focus:ring-1 focus:ring-[#7C3AED]/30 transition-all placeholder:text-gray-500"
               value={searchValue}
               onChange={(e) => setSearchValue(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && handleSearch()}

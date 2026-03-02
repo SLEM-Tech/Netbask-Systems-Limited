@@ -26,7 +26,7 @@ const config: Config = {
         // The deep navy blue seen in the "Maintenance" banner
         brand: {
           navy: "#002D5B",
-          blue: "#004B93", // Standard blue for buttons/icons
+          blue: "#7C3AED", // Standard blue for buttons/icons
           light: "#E6F0F9", // Light blue for hover states/bg
         },
 
@@ -36,11 +36,11 @@ const config: Config = {
         dark: "#0A0A0A", // For high-contrast text and footers
 
         primary: {
-          100: "#004B93", // Main Button Blue
+          100: "#7C3AED", // Main Button Blue
           200: "#003A72",
           300: "#002D5B", // Deep Navy
           400: "#001F3F",
-          DEFAULT: "#004B93",
+          DEFAULT: "#7C3AED",
         },
         black: {
           100: "#000000",
@@ -74,7 +74,7 @@ const config: Config = {
         },
 
         // Accents from the design
-        accent: "#004B93",
+        accent: "#7C3AED",
         price: "#002D5B", // Deep navy for price text
         whatsapp: "#25D366",
       },
@@ -107,7 +107,7 @@ const config: Config = {
               DEFAULT: "#002D5B",
               foreground: "#FFFFFF",
             },
-            focus: "#004B93",
+            focus: "#7C3AED",
           },
         },
       },

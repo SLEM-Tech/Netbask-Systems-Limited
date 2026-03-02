@@ -69,9 +69,9 @@ export const statusStyles: { [key: string]: string } = {
 
 export const headerNavLinks: linksProps[] = [
   { id: 1, href: "/", text: "Home" },
-  { id: 2, href: "/category", text: "Featured" },
-  { id: 3, href: "/category", text: "Categories" },
-  { id: 4, href: "/about-us", text: "About" },
+  { id: 2, href: "/category", text: "Categories" },
+  { id: 3, href: "/about-us", text: "About" },
+  { id: 4, href: "/faq", text: "FAQ" },
   { id: 5, href: "/contact-us", text: "Contact us" },
 ];
 

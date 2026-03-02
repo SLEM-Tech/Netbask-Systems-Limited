@@ -16,8 +16,7 @@ const AppLayout = ({ children, className }: AppLayoutProps) => {
         {children}
       </div>
       <Footer />
-      <div className="mt-20 sm:mt-0" />
-      <AppMenu />
+      {/* <div className="mt-20 sm:mt-0" /> */}
     </main>
   );
 };

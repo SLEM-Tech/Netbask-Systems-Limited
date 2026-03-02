@@ -166,18 +166,18 @@ const AllCategorySection = () => {
   return (
     <>
       {/* Hero Concept inspired by the image */}
-      <div className="relative w-full h-screen overflow-hidden">
+      <div className="relative w-full h-[calc(100vh)] -mt-[130px] slg:-mt-[110px] overflow-hidden">
         {/* The Background Image */}
         <Picture
           src={heroBg}
           alt="Brand New Collection"
-          className="w-full h-full object-cover scale-105"
+          className="absolute inset-0 w-full h-full object-cover scale-105"
         />
 
         {/* Content Overlay — Centered */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 pt-[130px] slg:pt-[110px]">
           <h1 className="text-2xl md:text-4xl lg:text-5xl text-white leading-tight font-semibold tracking-tight">
-            Let’s Help you get your <br />
+            Let's Help you get your <br />
             right Accessories.
           </h1>
           <p className="mt-6 text-sm md:text-lg text-white/70 max-w-lg leading-relaxed">
