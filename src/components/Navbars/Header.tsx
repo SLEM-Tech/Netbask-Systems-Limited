@@ -12,7 +12,7 @@ import {
   headerNavLinks,
 } from "@constants";
 import { getFirstCharacter, signOut } from "@utils/lib";
-import { LogoImage } from "@utils/function";
+import { logoImage } from "@public/images";
 import Picture from "../picture/Picture";
 import { APICall } from "@utils";
 import { fetchExchangeRate } from "@utils/endpoints";
@@ -113,10 +113,12 @@ const Header = () => {
         {/* Desktop Header */}
         <div className="hidden slg:flex items-center justify-between w-full py-3 max-w-[1440px] px-8 mx-auto">
           {/* Left - Logo */}
-          <Link
-            href="/"
-            className="text-xl font-bold tracking-[0.15em] text-[#7C3AED] uppercase shrink-0">
-            LOGO
+          <Link href="/" className="shrink-0 flex items-center">
+            <Picture
+              src={logoImage}
+              alt="Netbask Logo"
+              className="w-10 sm:w-12 md:w-16 h-auto object-contain"
+            />
           </Link>
 
           {/* Center - Nav Links */}
@@ -257,10 +259,12 @@ const Header = () => {
                 className="p-1 -ml-1 text-white hover:text-[#7C3AED] transition-colors">
                 <FiMenu className="text-xl sm:text-2xl" />
               </button>
-              <Link
-                href="/"
-                className="text-base sm:text-lg font-bold tracking-[0.12em] text-[#7C3AED] uppercase">
-                LOGO
+              <Link href="/" className="flex items-center">
+                <Picture
+                  src={logoImage}
+                  alt="Netbask Logo"
+                  className="w-20 sm:w-24 h-auto object-contain"
+                />
               </Link>
             </div>
 

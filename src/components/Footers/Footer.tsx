@@ -7,6 +7,8 @@ import { signOut } from "@utils/lib";
 import { CompanyName, filterCustomersByEmail } from "@constants";
 import { useCustomer } from "../lib/woocommerce";
 import { usePathname } from "next/navigation";
+import Picture from "../picture/Picture";
+import { logoImage } from "@public/images";
 import {
   BiLogoFacebook,
   BiLogoLinkedin,
@@ -102,10 +104,13 @@ const Footer = () => {
       {/* ─── Main Footer Content ─── */}
       <div className="max-w-[1256px] mx-auto px-4 sm:px-8 pt-8 sm:pt-10 pb-20 sm:pb-8">
         {/* Logo */}
-        <Link
-          href="/"
-          className="text-xl font-bold tracking-[0.15em] text-[#7C3AED] uppercase mb-8 inline-block">
-          LOGO
+        {/* Left - Logo */}
+        <Link href="/" className="shrink-0 flex items-center">
+          <Picture
+            src={logoImage}
+            alt="Netbask Logo"
+            className="w-10 sm:w-12 md:w-16 h-auto object-contain"
+          />
         </Link>
 
         {/* Columns */}
