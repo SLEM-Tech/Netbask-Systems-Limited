@@ -30,7 +30,7 @@ const page = () => {
         <SortedProducts />
       </div>
       <Subscribe />
-      <div className="pt-4 px-2 sm:px-0 mx-auto max-w-[1256px] mt-6 sm:mt-12">
+      {/* <div className="pt-4 px-2 sm:px-0 mx-auto max-w-[1256px] mt-6 sm:mt-12">
         <div className="mt-4 sm:mt-3">
           <section className="flex w-full flex-col items-center pt-16 text-center">
             <h3 className="font-semibold text-xl sm:text-2xl slg:text-4xl tracking-tighter">
@@ -39,7 +39,7 @@ const page = () => {
             <FaqAccordion />
           </section>
         </div>
-      </div>
+      </div> */}
     </AppLayout>
   );
 };
