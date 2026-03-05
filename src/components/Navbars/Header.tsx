@@ -284,7 +284,7 @@ const Header = () => {
             <input
               type="text"
               placeholder="Search products..."
-              className="w-full h-10 sm:h-11 text-sm bg-gray-900/50 text-white rounded-xl px-4 pl-10 border border-gray-700 outline-none focus:border-[#7C3AED] focus:ring-1 focus:ring-[#7C3AED]/30 transition-all placeholder:text-gray-500"
+              className="w-full h-10 sm:h-11 text-sm bg-gray-900/50 text-white rounded-xl px-4 pl-10 pr-10 border border-gray-700 outline-none focus:border-[#7C3AED] focus:ring-1 focus:ring-[#7C3AED]/30 transition-all placeholder:text-gray-500"
               value={searchValue}
               onChange={(e) => setSearchValue(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && handleSearch()}
@@ -294,6 +294,13 @@ const Header = () => {
                 <ImSpinner2 className="size-4 animate-spin text-[#7C3AED]" />
               : <FiSearch className="size-4" />}
             </div>
+            <button
+              onClick={handleSearch}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white active:text-[#7C3AED] transition-colors cursor-pointer">
+              {isPending ?
+                <ImSpinner2 className="size-4 animate-spin text-[#7C3AED]" />
+              : <FiSearch className="size-4" />}
+            </button>
           </div>
         </div>
 
