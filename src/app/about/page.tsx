@@ -32,7 +32,7 @@ const features = [
 const page = () => {
   return (
     <AppLayout>
-      <main className="bg-white mx-auto mt-28 md:mt-32 pb-16 slg:pb-32 font-sans">
+      <main className="bg-white mx-auto pt-28 md:pt-32 pb-16 slg:pb-32 font-sans">
         {/* Header Section */}
         <section className="flex w-full flex-col items-center pt-8 slg:pt-16 gap-4 px-6 text-center max-w-4xl mx-auto">
           <h3 className="font-black text-3xl md:text-5xl tracking-tighter text-slate-900">
