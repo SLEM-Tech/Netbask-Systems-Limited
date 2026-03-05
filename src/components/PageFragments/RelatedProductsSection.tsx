@@ -83,16 +83,17 @@ const RelatedProductsSection = ({
                 <Loader />
               : <>
                   {CategoryProducts?.map((product) => (
-                    <>
+                    <div
+                      key={product?.id}
+                      className="min-w-[220px] sm:min-w-[250px] w-[220px] sm:w-[250px] flex-shrink-0">
                       <ProductCard2
-                        key={product?.id}
                         id={product?.id}
                         image={product?.images[0]?.src}
                         oldAmount={product?.regular_price}
                         newAmount={product?.price}
                         description={product?.name}
                       />
-                    </>
+                    </div>
                   ))}
                 </>
               }
